@@ -61,6 +61,11 @@ public class CalculadoraActivity extends AppCompatActivity {
     }
 
     public void addOperacao(View view) {
+        if (visor.getText().toString().contains(""){
+
+        }
+
+        else
         operacao.setValor1(Float.parseFloat(visor.getText().toString()));
         operacao.setSinal(((TextView)view).getText().toString());
         visor.setText(operacao.getSinal());
